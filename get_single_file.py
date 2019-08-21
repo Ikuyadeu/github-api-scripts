@@ -38,13 +38,12 @@ PARAMS = {"path": PATH,
 COMMITS = []
 
 # Get All commit log
-i = 0
 while True:
     RESP = requests.get(URL,
                         params=PARAMS,
                         auth=AUTH)
     CONTENT = json.loads(RESP.content.decode("utf-8"))
-    if len(CONTENT) <= 1 or i > 10:
+    if len(CONTENT) <= 1 or PARAMS["page"] > 10:
         break
     PARAMS["page"] += 1
     COMMITS.extend(CONTENT)
