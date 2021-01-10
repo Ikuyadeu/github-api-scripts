@@ -1,8 +1,7 @@
 import json
 from csv import DictWriter
-from datetime import datetime, timezone
 from time import sleep
-from typing import Generator, Optional
+from typing import Generator
 from requests import exceptions, post
 import configparser
 
