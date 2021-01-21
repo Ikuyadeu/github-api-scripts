@@ -1,0 +1,62 @@
+{
+ "invitecomm": [
+  "asterisk_dtfmtest",
+  "third-party-submodule",
+  "CodeIgniter4",
+  "CodeIgniter",
+  "phpagi",
+  "pyst2",
+  "pystrix",
+  "python-docs-samples",
+  "asterisk-speech-recog",
+  "asterisk-googletts"
+ ],
+ "glytoucan": [
+  "docker-stanza",
+  "docker-glyspacesquid",
+  "docker-glytoucan-apache",
+  "docker-rdf.glytoucan",
+  "batch",
+  "glytoucan.github.io",
+  "glytoucan-php",
+  "docker-api.glytoucan",
+  "docker-apache-stanza.redirect",
+  "glyspaceclient"
+ ],
+ "nodejs-osaka": [
+  "command-line-app",
+  "module-patterns",
+  "npp01-k5m",
+  "Osaka-Node-Beginners",
+  "grunt-init-nodejs-osaka-reveal-js",
+  "npp02-k5m",
+  "opsworks-hapi-tutorial",
+  "santo2014-k5m",
+  "grunt-stylus-example",
+  "nodeschool.github.io"
+ ],
+ "dwango-js": [
+  "advice.js",
+  "DefinitelyTyped",
+  "private-npm-publish",
+  "flexunit-server",
+  "grunt-flexunit",
+  "jasmine-mockdate",
+  "io-bench",
+  "aac-duration",
+  "git-full-review",
+  "suitcss-classnames"
+ ],
+ "fxosorg": [
+  "fxos-theme",
+  "earth",
+  "OSC-2015-FirefoxOS-Handson",
+  "firefoxos-stb-appjam",
+  "fxos-code-reading",
+  "events",
+  "konetamono-clock",
+  "losika-clock",
+  "kawaiios",
+  "koganyan-clock"
+ ]
+}
