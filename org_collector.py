@@ -76,7 +76,7 @@ class OrgCollector:
         remaining
         resetAt
     }
-    search(query: "type:org repos:>10 location:japan", type: USER, first: 100) {
+    search(query: "type:org repos:>50", type: USER, first: 100) {
         repositoryCount
         edges {
             node {

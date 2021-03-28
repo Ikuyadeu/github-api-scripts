@@ -31,7 +31,7 @@ class OrgCollector:
         self.cursor = None
 
         orgs = {}
-        with open('orgs_short.csv', 'r') as org_list:
+        with open('popular_orgs.csv', 'r') as org_list:
             reader = DictReader(org_list)
             for org in reader:
                 org_name = org['login']
