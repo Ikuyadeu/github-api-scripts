@@ -1,0 +1,1 @@
+Square is no longer maintaining our fork of gh-unit. Please use [the original gh-unit](https://github.com/gh-unit/gh-unit).
