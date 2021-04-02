@@ -1,0 +1,2 @@
+# workshop
+Meteor JS Workshop

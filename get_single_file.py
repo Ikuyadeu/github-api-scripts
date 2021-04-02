@@ -8,20 +8,31 @@ Warning: This script can't get identify Readme.md README.md
 """
 import configparser
 import requests
+import os
 
 def collect_readme_file(user, token, owner, repo, dir):
-    project_path = f'{owner}/{repo}'
 
-    session = requests.Session()
-    session.auth = (user, token)
 
-    raw_url = f"https://raw.githubusercontent.com/{project_path}/master/README.md"
-    content = session.get(raw_url).content.decode("utf-8")
+    dir_path = f'{dir}/{owner}'
+    if not os.path.isdir(dir_path):
+        os.makedirs(dir_path)
+    out_name = f'{dir_path}/{repo}.md'
 
-    out_name = f'{dir}/{owner}-{repo}.md'
-    with open(out_name, "w") as f:
-        f.write(content)
-    print("Success to output %s " % (out_name))
+
+    if not os.path.isfile(out_name):
+        project_path = f'{owner}/{repo}'
+
+        session = requests.Session()
+        session.auth = (user, token)
+
+        raw_url = f"https://raw.githubusercontent.com/{project_path}/master/README.md"
+        try:
+            content = session.get(raw_url).content.decode("utf-8")
+            with open(out_name, "w") as f:
+                f.write(content)
+            print("Success to output %s " % (out_name))
+        except:
+            return
 
 
 if __name__ == "__main__":
