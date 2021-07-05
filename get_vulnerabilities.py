@@ -1,3 +1,8 @@
+"""
+途中まで作ったけど最終的に動かなかったので供養
+"""
+
+
 import json
 import sys
 from csv import DictWriter
